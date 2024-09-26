@@ -16,8 +16,8 @@ const $$BuyButton = createComponent(($$result, $$props, $$slots) => {
   const storeCuntry = contry === SPAIN ? "spain" : "usa";
   const countryName = contry === SPAIN ? "Espa\xF1a" : "Estados Unidos";
   const { buy } = Astro2.props;
-  return renderTemplate`${renderTemplate`${maybeRenderHead()}<a${addAttribute(buy[storeCuntry], "href")} title="Comprar libro" target="_blank" rel="noopener noreferrer" class="text-balance inline-flex gap-2 items-center bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-black font-bold py-2 px-4 rounded-lg border border-yellow-500 transition duration-200 ease-in-out hover:scale-105 justify-center text-center">
-Comprar en Amazon ${countryName}${renderComponent($$result, "AmazonLogo", $$AmazonLogo, {})}</a>`}`;
+  return renderTemplate`${renderTemplate`${maybeRenderHead()}<a${addAttribute(buy[storeCuntry], "href")} title="Buy on Amazon" target="_blank" rel="noopener noreferrer" class="text-balance inline-flex gap-2 items-center bg-yellow-400 hover:bg-yellow-500 active:bg-yellow-600 text-black font-bold py-2 px-4 rounded-lg border border-yellow-500 transition duration-200 ease-in-out hover:scale-105 justify-center text-center">
+Buy on Amazon ${countryName}${renderComponent($$result, "AmazonLogo", $$AmazonLogo, {})}</a>`}`;
 }, "/home/sabre/dev/dev-books/src/components/BuyButton.astro", void 0);
 
 const $$file = "/home/sabre/dev/dev-books/src/components/BuyButton.astro";

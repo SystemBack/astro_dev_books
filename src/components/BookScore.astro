@@ -5,4 +5,6 @@ const res = await fetch(SCORE_API_ENDPOINT);
 const score = await res.text();
 ---
 
-<span class="text-sm">Score: {score}/5</span>
+<span class="text-sm">
+    Score: {score.trim()}/5
+</span>
